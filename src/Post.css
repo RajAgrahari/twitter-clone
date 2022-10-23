@@ -1,0 +1,103 @@
+:root{
+   --hover-backcolor:white;
+   --hover-radius:0;
+}
+.post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-background);
+    padding-bottom: 10px;
+    /* max-width:fit-content; */
+  }
+  
+  .post_body {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .post_body > img {
+    border-radius: 20px;
+    width:100%;
+  }
+  
+  .post_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .post_footer > * {
+    display: flex;
+    padding: 4px;
+    align-items: center;
+  }
+  .post_icon{
+    padding:5px; 
+    background-color: var(--hover-backcolor);
+    border-radius: var(--hover-radius); 
+  }
+  .post_icon:hover{
+    background-color: var(--hover-backcolor);
+    
+  }
+
+  .post_comment:hover {
+     color:var(--twitter-color);
+     --hover-backcolor:rgb(195, 234, 233);
+     --hover-radius:50%;
+     cursor:pointer;
+     transition: all 100ms ease-out;
+  }
+  .post_retweet:hover {
+     color:rgb(9, 253, 119);
+     --hover-backcolor:rgb(210, 240, 223);
+     --hover-radius:50%;
+     cursor:pointer;
+     transition: all 100ms ease-out;
+  }
+  .post_heart:hover {
+     color:rgb(247, 94, 120);
+     --hover-backcolor:rgb(238, 207, 213);
+     --hover-radius:50%;
+     cursor:pointer;
+     transition: all 100ms ease-out;
+  }
+  .post_publish:hover {
+     color:var(--twitter-color);
+     --hover-backcolor:rgb(195, 234, 233);
+     --hover-radius:50%;
+     cursor:pointer;
+    transition: all 100ms ease-out;
+  }
+  
+  .post_headerDescription {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  
+  .post_headerText > h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .post_badge {
+    font-size: 14px !important;
+    color: var(--twitter-color);
+  }
+  
+  .post_headerSpecial {
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .post_avatar {
+    padding: 20px;
+  }
+  .post_heart_color{
+    color:red;
+    cursor:pointer;
+     transition: all 100ms ease-out;
+  }
+  .heart_display{
+    display: none;
+  }
